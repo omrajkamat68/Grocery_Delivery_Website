@@ -3,7 +3,8 @@ import User from "../models/User.js";
 // Update user CartData
 export const updateCart = async (req, res) => {
   try {
-    const { userId, cartItems } = req.body;
+    const { cartItems } = req.body;
+    const userId = req.userId;
     await User.findByIdAndUpdate(userId, { cartItems });
     res.json({ success: true, message: "Cart Updated" });
   } catch (error) {
