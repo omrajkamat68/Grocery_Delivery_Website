@@ -33,7 +33,7 @@ export const sellerLogin = async (req, res) => {
 // Seller isAuth (To check seller is authenticated or not and provide the seller data)
 export const isSellerAuth = async (req, res) => {
   try {
-    return res.json({ success: true, user });
+    return res.json({ success: true });
   } catch (error) {
     console.log(error.message);
     res.json({ success: false, message: error.message });
@@ -42,16 +42,15 @@ export const isSellerAuth = async (req, res) => {
 
 // Logout Seller
 export const sellerLogout = async (req, res) => {
-    try {
-      res.clearCookie("sellerToken", {
-        httpOnly: true,
-        secure: process.env.NODE_ENV === "production",
-        sameSite: process.env.NODE_ENV === "production" ? "none" : "strict",
-      });
-      return res.json({ success: true, message: "Logged Out" });
-    } catch (error) {
-      console.log(error.message);
-      res.json({ success: false, message: error.message });
-    }
-  };
-  
+  try {
+    res.clearCookie("sellerToken", {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: process.env.NODE_ENV === "production" ? "none" : "strict",
+    });
+    return res.json({ success: true, message: "Logged Out" });
+  } catch (error) {
+    console.log(error.message);
+    res.json({ success: false, message: error.message });
+  }
+};
