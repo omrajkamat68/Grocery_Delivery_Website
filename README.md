@@ -88,8 +88,8 @@ GREEN_CART/
 ### 📦 Clone the Repository  
 
 ```bash
-git clone https://github.com/omrajkamat68/grocery-delivery-app.git
-cd grocery-delivery-app
+git clone https://github.com/omrajkamat68/Grocery_Delivery_Website.git
+cd Grocery_Delivery_Website
 ```
 
 ### 🔧 Install Dependencies  
