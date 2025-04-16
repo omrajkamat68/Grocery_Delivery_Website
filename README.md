@@ -8,7 +8,8 @@ A separate **Seller Dashboard** enables sellers to manage products and view orde
 
 ## 🌐🚀 **LIVE DEMO**
 
-### 🔗 [👉 https://greencart-frontend.vercel.app/](https://greencart-frontend.vercel.app/)
+### 🔗 [👉 https://greencart-frontend.vercel.app/](https://greencart-frontend.vercel.app/)  
+🔑 **Seller Login:** [https://greencart-frontend.vercel.app/seller](https://greencart-frontend.vercel.app/seller)
 
 ---
 
